@@ -66,7 +66,7 @@ module Artoo
 
       def post(url, data={})
         data[:access_token] = access_token
-        HTTP.post(url, :form => data).response
+        HTTP.post(url, :form => data)
       end
 
       def device_url
